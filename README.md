@@ -1,2 +1,6 @@
 # spl_rust
-Space for code and projects for survey of programming languages course.
+
+Course code for survey of programming languages.
+
+- **docs/** - Documentation
+- **code/** - Projects and code examples
