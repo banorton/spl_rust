@@ -7,7 +7,9 @@ use macroquad::prelude::*;
 #[macroquad::main("L-System Tree")]
 async fn main() {
     let mut sys = lsystem::LSystem::new("F");
-    sys.add_rule('F', "FF+[+F-F-F]-[-F+F+F]");
+    sys.add_weighted_rule('F', 1.0, "FF+[+F-F-F]-[-F+F+F]");
+    sys.add_weighted_rule('F', 0.5, "FF-[-F+F]+[+F-F]");
+    sys.add_weighted_rule('F', 0.3, "F[+F]F[-F]F");
 
     let expanded = sys.expand(4);
     let config = turtle::TurtleConfig {
