@@ -4,7 +4,7 @@ Course code for survey of programming languages.
 
 - **docs/** - Documentation
 - **code/** - Projects and code examples
-- **src/** - L-system tree generator
+  - **code/lsystem-tree/** - L-system tree generator
 
 ## L-System Tree Generator
 
@@ -17,6 +17,7 @@ Procedurally generates natural-looking trees using [L-systems](https://en.wikipe
 ### Run the demo
 
 ```bash
+cd code/lsystem-tree
 cargo run
 ```
 
@@ -25,5 +26,6 @@ A window will open displaying a generated tree using the grammar `F → FF+[+F-F
 ### Run tests
 
 ```bash
+cd code/lsystem-tree
 cargo test
 ```
